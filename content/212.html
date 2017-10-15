@@ -1,0 +1,55 @@
+<h1 class="tutor-head"><b>器乐音乐制作</b> &raquo; MIDI和音源</h1><br>
+
+<h1 class="tutor-head-lit"><span class="glyphicon glyphicon-hand-right"></span> 创建工程和基本设置</h1><br/>
+<p>
+    首先用Cubase创建一个空白的工程。</p><p>
+1.	设置声卡驱动和：<b>设备&raquo; 设备设置&raquo; VST音频系统&raquo; 选择你的声卡对应的驱动&raquo; 确定</b></p>
+<img class="img-tutor2" src="img/tutor2/2.jpg">
+<p>
+2.	设置声道映射：<b>F4&raquo;选择输入输出</b>。这里的Input1和input2一般是对应声卡上的接口1和接口2，output1和output2是对应声卡输出的左右声道。</p>
+<div class="row">
+<img class="col-sm-6" src="img/tutor2/3.jpg">
+<img class="col-sm-6" src="img/tutor2/4.jpg">
+
+</div><br/><br/><br/>
+<h1 class="tutor-head-lit"><span class="glyphicon glyphicon-hand-right"></span> 乐器轨道和MIDI编辑</h1><br/>
+<p>
+    1.	添加乐器轨道：cubase中的乐器轨道是一种通过写入MIDI（相当于谱子）轨道来驱动音源发出声音的轨道。我们先来用鼓音源制作的鼓的轨道。<b>右击左侧蓝色区域&raquo;创建乐器轨道&raquo;选择鼓音源&raquo;确定</b> </p>
+<div class="row">
+    <div class="col-sm-3 blank"></div>
+<img class="col-sm-2 img-self-zoom" src="img/tutor2/5.jpg">
+<img class="col-sm-4" src="img/tutor2/6.jpg">
+    <div class="col-sm-3 blank"></div>
+</div><br/>
+    <p>对创建完的乐器轨道点击左侧“编辑乐器”的图标<img src="img/tutor2/n2.jpg">就可以弹出音源的操作界面:</p>
+<img class="img-tutor" src="img/tutor2/7.jpg"><br/>
+<p>
+2.	设置速度：按F2可以切换如图的走带界面的现实与否，在TEMPO初可以控制工程的速度。本例使用的是恒定速度，故点击TRACK处成FIXED。单击C键开启节拍器并按空格播放，此刻就能听到节拍器根据设置的速度打节拍的声音，跟着演奏以确定速度。本例中轨道的速度是110。</p>
+<img class="col-xs-12" src="img/tutor2/10.jpg">
+<p><br/><br/><br/><br/>
+    3.	写入MIDI：在乐器轨道上右击选择画笔，用画笔拖拽写入一段空白的MIDI曲谱。</p>
+<div class="row">
+    <div class="col-sm-2 blank"></div>
+<img class="col-sm-2" src="img/tutor2/8.jpg">
+<img class="col-sm-6" src="img/tutor2/9.jpg">
+    <div class="col-sm-2 blank"></div>
+</div>
+<p><br/><br/><br/>双击该曲谱就会弹出MIDI编辑界面，按H可以切换是否自动对齐，对齐的节拍可以在右上角量化中选择。Needpic。右击鼠标选择画笔后可以写入midi，在乐器轨道上写入MIDI时会听到对应的乐器发出声响。一般情况下，对于鼓音源而言，C1是底鼓，D1是军鼓，F#1，G#1，A#1是不同开合状态的镲片。自己多进行尝试，自己聆听获得需要的音色。</p>
+<div class="row">
+    <div class="col-sm-1 blank"></div>
+<img class="col-sm-5" src="img/tutor2/11.jpg">
+<img class="col-sm-5" src="img/tutor2/12.jpg">
+    <div class="col-sm-1 blank"></div>
+</div>
+<p><br/><br/><br/>编写完节奏和曲谱后记得适当调整力度以使演奏更真实：选中需要编辑力度的音符，在下方的力度控制区域进行编辑。</p>
+<p>点击菜单栏的<b>MIDI&raquo;功能</b> 中可以对进行更多的编辑操作。</p><p>
+全部编写完以后关闭MIDI编辑界面可以看到在乐器轨上有了MIDI曲谱的结构。你可以<a href="download/drum.mid">下载</a>本例中的MIDI文件。通过文件&raquo;导入&raquo;MIDI文件 导入到你自己的工程中。</p>
+<img class="col-xs-12" src="img/tutor2/13.jpg">
+<p><br/><br/><br/>
+最后，要记得由于之后的音频轨道是听着MIDI录制的，需要考虑在开头敲击四拍空拍以便进入。</p>
+<p>下面是完成鼓组的MIDI编写后导出的鼓的音轨</p>
+<br/><p class="audio-inst"><span class="glyphicon glyphicon-headphones"></span> MIDI驱动音源的鼓声(音源采用SuperiorDrummer2-SL-Avatar的默认配置):</p>
+<audio controls>
+  <source src="audio/drum.mp3" type="audio/mpeg">
+  您的浏览器不支持 audio 元素。
+</audio><br/>

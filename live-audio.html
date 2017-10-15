@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width initial-scale=1.0" name="viewport">
+
+<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/animate.js"></script>
+<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/screen_media.css" />
+<link rel="stylesheet" type="text/css" href="css/interaction.css" />
+<script>
+$(document).ready(function(){
+        
+    $("#content").load("content/111.html");
+    $(".tutor-back").text("");
+    $(".tutor-forth").text("现场电源连接>");
+    
+	$(".list-hid").click(function(){
+        var idN = $(this).context.id;
+		$("#content").load("content/"+idN + ".html");
+        scroll(0,0);
+        $(".list-focus").addClass("list-hid");
+        $(".list-hid").removeClass("list-focus");
+        $(this).addClass("list-focus"); 
+        var prev=$(this).prevAll(".list-hid");
+        var next=$(this).nextAll(".list-hid");
+        (prev.length>0) ? $(".tutor-back").text("<"+prev[0].innerHTML) : $(".tutor-back").text("");
+        (next.length>0) ? $(".tutor-forth").text(next[0].innerHTML+">"): $(".tutor-forth").text("");
+	})
+    
+    $(".tutor-back").click(function(){
+        var focus=$(".list-focus");
+        var prev=focus.prevAll(".list-hid");
+        var idN=prev[0].id;
+        $("#content").load("content/"+idN + ".html");
+        scroll(0,0);
+        $(".list-hid").removeClass("list-focus");
+        prev[0].className ="list-group-item list-hid list-focus";
+        focus=$(".list-focus");
+        prev=focus.prevAll(".list-hid");
+        var next=focus.nextAll(".list-hid");
+        (prev.length>0) ? $(".tutor-back").text("<"+prev[0].innerHTML) : $(".tutor-back").text("");
+        (next.length>0) ? $(".tutor-forth").text(next[0].innerHTML+">"): $(".tutor-forth").text("");
+        
+        var upfocus = $(".list-focus").prevUntil(".list-chapter",".list-hid");
+        var downfocus = $(".list-focus").nextUntil(".list-chapter",".list-hid");
+        focus = $(".list-focus")
+        var chap = $(".list-focus").prevAll(".list-chapter");
+        var logo = chap[0].children;
+        logo[0].className = "logo-down glyphicon glyphicon-chevron-up";
+        for (var i=0;i<upfocus.length;i++)
+        {            upfocus[i].style.display = "block";        }
+        for (i=0;i<downfocus.length;i++)
+        {            downfocus[i].style.display = "block";        }
+        for (i=0;i<focus.length;i++)
+        {            focus[i].style.display = "block";        }     
+    })
+    
+    $(".tutor-forth").click(function(){
+        var focus=$(".list-focus");
+        var next=focus.nextAll(".list-hid");
+        var idN=next[0].id;
+        $("#content").load("content/"+idN + ".html");
+        scroll(0,0);
+        $(".list-hid").removeClass("list-focus");
+        next[0].className ="list-group-item list-hid list-focus";
+        focus=$(".list-focus");
+        next=focus.nextAll(".list-hid");
+        var prev=focus.prevAll(".list-hid");
+        (prev.length>0) ? $(".tutor-back").text("<"+prev[0].innerHTML) : $(".tutor-back").text("");
+        (next.length>0) ? $(".tutor-forth").text(next[0].innerHTML+">"): $(".tutor-forth").text("");
+        
+        var upfocus = $(".list-focus").prevUntil(".list-chapter",".list-hid");
+        var downfocus = $(".list-focus").nextUntil(".list-chapter",".list-hid");
+        focus = $(".list-focus")
+        var chap = $(".list-focus").prevAll(".list-chapter");
+        var logo = chap[0].children;
+        logo[0].className = "logo-down glyphicon glyphicon-chevron-up";
+        for (var i=0;i<upfocus.length;i++)
+        {            upfocus[i].style.display = "block";        }
+        for (i=0;i<downfocus.length;i++)
+        {            downfocus[i].style.display = "block";        }
+        for (i=0;i<focus.length;i++)
+        {            focus[i].style.display = "block";        }
+    })
+    
+    $(".list-chapter").click(function(){
+        var hidlist = $(this).nextUntil(".list-chapter",".list-hid");
+        for (var i=0;i<hidlist.length;i++){
+            (hidlist[i].style.display == "block") ? hidlist[i].style.display = "none" : hidlist[i].style.display = "block";
+        }
+        var chil = $(this).children();
+        if (chil.hasClass("glyphicon-chevron-down")) {
+            chil.removeClass("glyphicon-chevron-down");
+            chil.addClass("glyphicon-chevron-up");
+        }
+        else{
+            chil.removeClass("glyphicon-chevron-up");
+            chil.addClass("glyphicon-chevron-down");}
+                           })
+    
+    $("#xs-arrow").click(function(){
+        var list = $("ul.list-group");
+        if (list[0].style.display == "none") {
+            list[0].style.display = "block";
+        }
+        else{
+            list[0].style.display = "none";
+        }
+    })
+});
+    
+</script>  
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container">
+        <h1 class="main-title col-sm-6 col-xs-12">交大乐联 · 音频技术</h1>
+        <div class="col-sm-2 blank"></div>
+        <form class="form-search col-sm-4 col-xs-12">
+             <button type="submit" class="search-submit btn">搜索</button>
+     	     <input type="text" class="search search-query" placeholder="输入要搜索的关键词">  
+        </form>
+    </header>
+    <!-- 菜单栏 -->
+    <nav>
+        <div class="container">
+           <a href="index.html"><div class="nav-box">音频指南</div></a>
+           <a href="list.html"><div class="nav-box">关键字列表</div></a>
+           <a href="download.html"><div class="nav-box">资源下载</div></a>
+           <a href="about.html"><div class="nav-box">关于乐联</div></a>
+        </div>
+    </nav>
+    <!-- 主页面 -->
+    <div class="container">
+    <!-- 边栏 -->
+    <!--<div class="col-sm-1"></div>-->
+    <div class="xs-arrow glyphicon glyphicon-th-list visible-xs" id="xs-arrow"></div>
+    <div class="col-sm-2">
+    <ul class="list-group">
+	   <li class="list-group-item list-head" style="cursor:auto;">现场音频</li>
+       <li class="list-group-item list-chapter">系统 <span class="logo-down glyphicon glyphicon-chevron-up"></span></li>
+          <li class="list-group-item list-hid list-focus" id=111 style="display:block;">现场音频系统概述</li>
+          <li class="list-group-item list-hid" id=112 style="display:block;">现场电源连接</li>
+          <li class="list-group-item list-hid" id=113 style="display:block;">现场音频线接线</li>
+	   <li class="list-group-item list-chapter">拾音 <span class="logo-down glyphicon glyphicon-chevron-down"></span></li>
+          <li class="list-group-item list-hid" id=121>麦克风拾音</li>
+          <li class="list-group-item list-hid" id=122>DI拾音</li>
+          <li class="list-group-item list-hid" id=123>对电吉他拾音</li>
+          <li class="list-group-item list-hid" id=124>对贝司拾音</li>
+          <li class="list-group-item list-hid" id=125>对原声吉他拾音</li>
+          <li class="list-group-item list-hid" id=126>对鼓组拾音</li>
+       <li class="list-group-item list-chapter">主扩 <span class="logo-down glyphicon glyphicon-chevron-down"></span></li>
+          <li class="list-group-item list-hid" id=131>从调台分配输出</li>
+          <li class="list-group-item list-hid" id=132>分频器</li>
+          <li class="list-group-item list-hid" id=133>功放</li>
+          <li class="list-group-item list-hid" id=134>音箱的摆放和测试</li>
+	   <li class="list-group-item list-chapter">调台 <span class="logo-down glyphicon glyphicon-chevron-down"></span></li>
+          <li class="list-group-item list-hid" id=141>轨道</li>
+          <li class="list-group-item list-hid" id=142>音量与声像</li>
+          <li class="list-group-item list-hid" id=143>均衡和压缩</li>
+        <li class="list-chapter" style="display:none"></li>
+    </ul>
+    </div>
+    <!-- 内容 -->
+    <div class="col-sm-10 content">
+        <a class="tutor-back col-xs-6" id=""></a>
+        <a class="tutor-forth col-xs-6" id=""></a>
+    <div id="content">
+    </div>
+        <br/><br/><br/><br/><br/><br/><br/>
+        <a class="tutor-back col-xs-6"></a>
+        <a class="tutor-forth col-xs-6"></a>
+
+    </div>                                
+    </div>
+    <!-- 底栏 -->
+    <footer class="blank navbar navbar-default">
+        <p>上海交通大学乐队联盟·110 studio<br/>上海市闵行区东川路800号·上海交通大学闵行校区·文化坊110</p>
+    </footer>
+</body>
+

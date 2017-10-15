@@ -1,0 +1,38 @@
+
+.menu-box:hover {
+    background-color: #efefef;
+    cursor: pointer;
+    transform: scale(1.11);
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
+
+.nav-box:hover {
+    background-color:rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+.logo-down:hover {
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+.list-group-item:hover {
+    cursor: pointer;
+}
+
+.img-self-zoom:active{
+    transform: scale(1.2);
+    transition: 0.5s ease-out;
+}
+
+.img-self-zoom:hover{
+    cursor:zoom-in;
+}
+
+
+.list-group:hover {
+    overflow:auto;
+}

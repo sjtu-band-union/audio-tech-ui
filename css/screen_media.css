@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px){
+    .blank,.big-info,ul.list-group{display:none;}
+    .nav-box{width:50%;}
+    .main-title,.nav-box,form{text-align: inherit;}
+    .main-title{font-size: 2.5rem;margin-bottom:20px;}
+    .menu-box {    width:44%;    margin:calc(8%/4);}
+    .form-search {    margin-top: 0;}
+    .search-submit{margin-right:5%;}
+    .tutor-pic-div{width:46%;  margin:calc(4%/4);}   
+   .list-group{
+       top:230px;
+       opacity: 0.9;
+       width:40%;
+   }
+}
+
+@media screen and (max-width: 1024px){
+    .menu-instr{display:none;}
+}
+
+@media screen and (min-width: 768px) {
+    .list-group{
+        top:164px;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1600px){
+    .list-group{
+        width:11%;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width:1920px) {
+    .list-group{
+        width:9%;
+    }
+    
+}
+
+@media screen and (min-width: 1920px) {
+    .list-group{
+        width:7.6%;
+    }
+    
+}

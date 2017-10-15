@@ -1,0 +1,247 @@
+body{
+   font-family: Microsoft YaHei;
+    text-align: center;
+}
+
+header{
+    margin:15px 0 20px;
+}
+
+.main-title{
+    text-align: left;
+    color: #343434;
+}
+
+nav{
+    width:100%;
+    display: inline-block;  
+    background-color: #a4bfba;
+    margin-bottom: 10px;
+}
+
+.nav-box{
+    height:45px;
+    font-size:1.5rem;
+    float:left;
+    width:13%;
+    padding-top:12px;
+    color:white;
+}
+
+
+form {
+    text-align: right;
+}
+
+.menu-pic {
+    width:50%;
+    margin:10px;
+}
+
+
+
+.menu-box {
+    margin:15px 0;
+    border-radius: 10px;
+    opacity: 0.9;
+    float:left;
+    width:22%;
+    margin:calc(12%/8);
+    padding:10px 10px 0;
+}
+
+.menu-instr {
+    color:#888;
+    min-height: 5rem;
+    font-weight: lighter;
+    font-size:0.7rem;
+}
+
+.search {
+    width:70%;
+    height: 34px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    float: right;
+    border: solid #cbf0e6 1px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-submit {
+    float: right;
+    background-color: #cbf0e6;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-search {
+    margin-top: 23px;
+}
+
+footer {
+    width:100%;
+    font-size: 0.5rem;
+    color:rgba(0, 0, 0, 0.61);
+    padding-top:5px;
+    margin-top:50px;
+    z-index: -1;
+}
+
+.content {
+    text-align: left;
+    padding:5px 30px 100px 30px;
+    font-size: 0.8em;
+    border:solid 1px #eee;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #eee;
+}
+
+.list-head {
+    background-color: #7c908c;
+    color:white;
+}
+
+
+
+.list-hid {
+    background-color: #f8f8f8;
+    color:#767676;
+    display: none;
+    border-color: #ccc;
+}
+
+.logo-down {
+    opacity: 0.5;
+    font-size: 0.4rem;
+}
+
+
+
+.tutor-table {
+    font-weight:normal;
+    font-size:0.7rem;
+    margin:auto;
+    width:100%;
+}
+
+.tutor-head {
+    font-size: 2rem;
+}
+
+.list-group {
+    box-shadow: 0px 0px 10px #eee;
+    position: fixed;
+    z-index: 1;
+}
+
+th{
+    font-weight: lighter;
+    padding: 7px;
+}
+
+thead {
+    background-color: rgba(164, 191, 186, 0.73);
+    color: white;
+}
+
+.tutor-head-lit {
+    font-size: 1.5rem;
+}
+
+p {
+    text-indent: 2rem;
+    font-size: 1.5rem;
+}
+
+img{
+    text-align: center;
+}
+
+.img-tutor {
+    width:70%;
+    margin:15px 15%;
+}
+
+
+
+.tutor-pic-div {
+    min-height:330px;
+    float: left;
+    width:30%;
+    margin:calc(10%/6);
+    border-radius: 5px;
+    padding:10px;
+}
+
+.list-focus {
+    background-color: #e0e0e0;
+    color:#4a4a4a;
+    display: none;
+    border-color: #ccc;
+}
+
+.tutor-back,.tutor-forth {
+    cursor: pointer;
+    color:#80aaa2;
+    margin:15px 0 30px;
+    min-height: 30px;
+    font-size:1.4rem;
+}
+
+.tutor-forth{
+    text-align: right;
+}
+
+.tutor-back{
+    text-align: left;
+}
+
+.tutor-back,.tutor-forth:hover {
+    color:#61716e;
+}
+
+
+
+.dl-link {
+    font-size: 1.5rem;
+    margin:20px;
+    text-wrap:none;
+}
+
+.xs-arrow {
+    position:fixed;
+    top:234px;
+    left:5px;
+    font-size:2rem;
+    margin:7px;
+    cursor: pointer;
+    z-index: 2;
+    opacity:0.7;
+}
+
+
+.audio-inst {
+    font-size:1rem;
+    color:#4385c7;
+    text-indent: 1rem;
+}
+
+.img-tutor2 {
+    width:50%;
+    margin:15px 25%;
+}
+
+.img-tutor3 {
+    width:33%;
+    margin:15px 33%;
+}
+
+.img-tutor4 {
+        width:26%;
+    margin:15px 37%;
+}
+
+.menu-title {
+    color:#337ab7;
+}
