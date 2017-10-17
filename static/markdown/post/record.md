@@ -4,7 +4,7 @@
 - GTP6导出的音频混缩[查看曲谱](img/tutor2/n2.pdf)
 
 <audio controls>
-  <source src="audio/gtp.mp3" type="audio/mpeg">
+  <source src="static/audio/gtp.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 
@@ -24,48 +24,48 @@
 
 ### 本节学习的准备工作
 开始本章的学习之前，有一些必要的准备工作。硬件方面你需要有一台声卡，软件方面你首先需要安装你所用的声卡的驱动，然后需要下载并安装Cubase系列的音序器（也可以采用别的音序器，这些软件之间都是大同小异的，但是我们的教程是以Cubase5为示范的），Waves V9r23以上的版本，以及一个鼓音源，可以是Ezdrummer，AddictiveDrummer。以上的软件你都能在资料下载里找到，但本章演示中将使用的Superior Drummer可能需要你自行下载或购买安装。不过不同的鼓音源的工作模式大同小异，不太会影响学习的过程。下面的图会帮你理清这些准备工作。
-<img src="img/tutor2/n5.jpg">
+![](static/img/tutor2/n5.jpg)
 
 ## 声音的获得——MIDI和音源
 ### 创建工程和基本设置
 首先用Cubase创建一个空白的工程。
 1.    设置声卡驱动和： **设备&raquo; 设备设置&raquo; VST音频系统&raquo; 选择你的声卡对应的驱动&raquo; 确定**
-    <img src="img/tutor2/2.jpg">
+    ![](static/img/tutor2/2.jpg)
 
 1.    设置声道映射： **F4&raquo;选择输入输出** 。这里的Input1和input2一般是对应声卡上的接口1和接口2，output1和output2是对应声卡输出的左右声道。
-    <img class="col-sm-6" src="img/tutor2/3.jpg">
-    <img class="col-sm-6" src="img/tutor2/4.jpg">
+![](static/img/tutor2/3.jpg)
+![](static/img/tutor2/4.jpg)
 
 
 ### 乐器轨道和MIDI编辑
 1.    添加乐器轨道：cubase中的乐器轨道是一种通过写入MIDI（相当于谱子）轨道来驱动音源发出声音的轨道。我们先来用鼓音源制作的鼓的轨道。 **右击左侧蓝色区域&raquo;创建乐器轨道&raquo;选择鼓音源&raquo;确定**
-      <img src="img/tutor2/5.jpg">
-      <img src="img/tutor2/6.jpg">
-      对创建完的乐器轨道点击左侧“编辑乐器”的图标<img src="img/tutor2/n2.jpg">就可以弹出音源的操作界面:
-      <img src="img/tutor2/7.jpg">
+      ![](static/img/tutor2/5.jpg)
+      ![](static/img/tutor2/6.jpg)
+      对创建完的乐器轨道点击左侧“编辑乐器”的图标![](static/img/tutor2/n2.jpg)就可以弹出音源的操作界面:
+      ![](static/img/tutor2/7.jpg)
 
 1.      设置速度：按F2可以切换如图的走带界面的现实与否，在TEMPO初可以控制工程的速度。本例使用的是恒定速度，故点击TRACK处成FIXED。单击C键开启节拍器并按空格播放，此刻就能听到节拍器根据设置的速度打节拍的声音，跟着演奏以确定速度。本例中轨道的速度是110。
-      <img src="img/tutor2/10.jpg">
+      ![](static/img/tutor2/10.jpg)
 
 1.      写入MIDI：在乐器轨道上右击选择画笔，用画笔拖拽写入一段空白的MIDI曲谱。
-      <img src="img/tutor2/8.jpg">
-      <img class="col-sm-6" src="img/tutor2/9.jpg">
+			![](static/img/tutor2/8.jpg)
+			![](static/img/tutor2/9.jpg)
 
 双击该曲谱就会弹出MIDI编辑界面，按H可以切换是否自动对齐，对齐的节拍可以在右上角量化中选择。Needpic。右击鼠标选择画笔后可以写入midi，在乐器轨道上写入MIDI时会听到对应的乐器发出声响。一般情况下，对于鼓音源而言，C1是底鼓，D1是军鼓，F#1，G#1，A#1是不同开合状态的镲片。自己多进行尝试，自己聆听获得需要的音色。
 
-<img class="col-sm-5" src="img/tutor2/11.jpg">
-<img class="col-sm-5" src="img/tutor2/12.jpg">
+![](static/img/tutor2/11.jpg)
+![](static/img/tutor2/12.jpg)
 
 编写完节奏和曲谱后记得适当调整力度以使演奏更真实：选中需要编辑力度的音符，在下方的力度控制区域进行编辑。
 点击菜单栏的 **MIDI&raquo;功能**  中可以对进行更多的编辑操作。
-全部编写完以后关闭MIDI编辑界面可以看到在乐器轨上有了MIDI曲谱的结构。你可以<a href="download/drum.mid">下载</a>本例中的MIDI文件。通过文件&raquo;导入&raquo;MIDI文件 导入到你自己的工程中。
-<img src="img/tutor2/13.jpg">
+全部编写完以后关闭MIDI编辑界面可以看到在乐器轨上有了MIDI曲谱的结构。你可以[下载](static/download/drum.mid)本例中的MIDI文件。通过文件&raquo;导入&raquo;MIDI文件 导入到你自己的工程中。
+![](static/img/tutor2/13.jpg)
 
 最后，要记得由于之后的音频轨道是听着MIDI录制的，需要考虑在开头敲击四拍空拍以便进入。
 下面是完成鼓组的MIDI编写后导出的鼓的音轨
 - MIDI驱动音源的鼓声(音源采用SuperiorDrummer2-SL-Avatar的默认配置):
 <audio controls>
-  <source src="audio/drum.mp3" type="audio/mpeg">
+  <source src="static/audio/drum.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 
@@ -73,33 +73,38 @@
 录音就是将音频从声音振动的信号转化成电信号再经由声卡的AD转换器转换成数字信号并用电脑存储下来的过程。
 
 1.    添加音频轨道：为了录音，在软件端我们先要添加单声道音频轨道。因为本例的需求，我们需要录制至少三把吉他，故添加三条单声道轨道，并为他们进行重命名。
-     <img src="img/tutor2/14.jpg">
-     <img src="img/tutor2/15.jpg">
+     ![](static/img/tutor2/14.jpg)
+     ![](static/img/tutor2/15.jpg)
 
 1.   接入乐器设备：在硬件端，我们将吉他（电声乐器）通过吉他线连接到声卡的接口上（记住是哪个接口），在声卡上将该接口设置为高阻抗输入（如果是line-inst就拨到inst，如果是Hi-Z就按下Hi-Z，如果声卡有专门的guitar或者instrument口就插在哪个口上）。
 
 1.   设置轨道：在电脑上选中要录音的轨道，在左侧把输入选择为声卡上连接的接口所对应的左右输入（不清楚的话可以F4打开声道映射，看左右输入分别对应的声卡的什么输入）。
-     <img src="img/tutor2/16.jpg">
+     ![](static/img/tutor2/16.jpg)
 
-1.    设置话放：在电脑上点击对应轨道的监听小喇叭<img src="img/tutor2/n7.jpg">，演奏乐器，此时对应轨道的信号栏应该会有信号输入（如果没有，需要检查硬件连接和轨道的设置）。用较大的力度进行演奏，同时调整声卡上接口对应的话放旋钮，在音频信号不爆的情况下把话放开得尽可能大一些。下图展示的是Focusrite Scarlett 2i4 USB声卡。其上的旋钮的命名与本教程的称呼是基本一致的。
-     <img src="img/tutor2/n6.jpg">
+1.    设置话放：在电脑上点击对应轨道的监听小喇叭![](static/img/tutor2/n7.jpg)，演奏乐器，此时对应轨道的信号栏应该会有信号输入（如果没有，需要检查硬件连接和轨道的设置）。用较大的力度进行演奏，同时调整声卡上接口对应的话放旋钮，在音频信号不爆的情况下把话放开得尽可能大一些。下图展示的是Focusrite Scarlett 2i4 USB声卡。其上的旋钮的命名与本教程的称呼是基本一致的。
+     ![](static/img/tutor2/n6.jpg)
 
 1.    插入调音表：对于本例中要录制的电吉他和电贝司在录音前需要仔细地较音。可以直接在对应音轨中的 **插入** 中选择 **guitar&raquo; gtr tuner mono** ，在监听按钮按下的情况下就可以对乐器进行调音。
-    <img src="img/tutor2/23.jpg">
-    <img src="img/tutor2/18.jpg">
-    <img src="img/tutor2/19.jpg">
+    ![](static/img/tutor2/23.jpg)
+    ![](static/img/tutor2/18.jpg)
+    ![](static/img/tutor2/19.jpg)
 
 1.   试奏：在录音前为了确保拾音演奏的监听环境，一般先要试奏一下。可以选择将声卡上的direct-playback旋钮完全打到playback一边（代表着完全听来自电脑的声音），然后给轨道插入一个吉他箱模来实时润色声音。
-     <img  src="img/tutor2/21.jpg"><img class="col-sm-8 img-self-zoom" src="img/tutor2/22.jpg"> 但是如果试奏的时候发现延迟严重以至于影响了发挥，可以考虑关闭轨道上的监听小喇叭，把声卡的direct-playback旋钮打到中间左右，同时听着输入声卡的干声和电脑的播放来演奏，这样的演奏听觉效果可能不如前者，但可以保证节拍的正确。而电脑录音录到的则都同样是干声。
+     ![](static/img/tutor2/21.jpg)
+		 ![](static/img/tutor2/22.jpg) 
+		 但是如果试奏的时候发现延迟严重以至于影响了发挥，可以考虑关闭轨道上的监听小喇叭，把声卡的direct-playback旋钮打到中间左右，同时听着输入声卡的干声和电脑的播放来演奏，这样的演奏听觉效果可能不如前者，但可以保证节拍的正确。而电脑录音录到的则都同样是干声。
 
-1.   录音：一般而言对于选中的轨道，轨道上红色的录音按钮就会自动亮起。此时把时间线拉至音乐开头，按下走带的红色圆点录音按钮，就开始录音了。录音时建议将  **文件&raquo; 首选项&raquo; 走带**  中的在停止时返回开始位置的选项勾上，以方便从同样的位置开始 <img class="img-tutor2 img-self-zoom" src="img/tutor2/n1.jpg"> 在录每一轨音频的时候，都应该着重跟着鼓声进行录制。在录完以后跟鼓声仔细校对节拍是否合上，演奏的表现力如何；单独听取演奏是否有杂音和不完美的地方。一般要求高的单个轨道的录音录20几遍都算是小数目，力求完美是应该贯彻整个录音阶段的核心理念。 <img src="img/tutor2/20.jpg">
+1.   录音：一般而言对于选中的轨道，轨道上红色的录音按钮就会自动亮起。此时把时间线拉至音乐开头，按下走带的红色圆点录音按钮，就开始录音了。录音时建议将  **文件&raquo; 首选项&raquo; 走带**  中的在停止时返回开始位置的选项勾上，以方便从同样的位置开始 
+		![](static/img/tutor2/n1.jpg) 
+		在录每一轨音频的时候，都应该着重跟着鼓声进行录制。在录完以后跟鼓声仔细校对节拍是否合上，演奏的表现力如何；单独听取演奏是否有杂音和不完美的地方。一般要求高的单个轨道的录音录20几遍都算是小数目，力求完美是应该贯彻整个录音阶段的核心理念。 
+		![](static/img/tutor2/20.jpg)
 
-1. 简单的剪辑：在大型的音频工程中，剪辑也是很重要的单独环节，但是由于本例较为简单，没有单独讨论这种后期处理的技巧。剪辑可以把不该有的噪声剪去，把错乱的节拍剪整齐，让多变演奏演唱而合成的一句乐句听起来就像是一遍流畅的录音。虽然剪辑也有很多的技巧，但是最大的技巧在于大量的长期的实践和细心的仔细的态度。本例的录音经过简单的剪辑后整个工程呈如下形态，那么就已经做好了进入下一制作阶段：混音的准备了。
-     <img src="img/tutor2/24.jpg">
-     这些录音素材的分轨的<a href="download/Demo分轨.zip">下载地址</a>。
+1.	 简单的剪辑：在大型的音频工程中，剪辑也是很重要的单独环节，但是由于本例较为简单，没有单独讨论这种后期处理的技巧。剪辑可以把不该有的噪声剪去，把错乱的节拍剪整齐，让多变演奏演唱而合成的一句乐句听起来就像是一遍流畅的录音。虽然剪辑也有很多的技巧，但是最大的技巧在于大量的长期的实践和细心的仔细的态度。本例的录音经过简单的剪辑后整个工程呈如下形态，那么就已经做好了进入下一制作阶段：混音的准备了。
+     ![](static/img/tutor2/24.jpg)
+     这些录音素材的分轨的[下载地址](static/download/Demo分轨.zip)</a>。
 
 - 准备好进行混音的工程的混缩:
 <audio controls>
-  <source src="audio/PutTogether.mp3" type="audio/mpeg">
+  <source src="static/audio/PutTogether.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>

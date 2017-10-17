@@ -5,28 +5,28 @@
 新建轨道，选择FX轨道&raquo; 在弹出来的对话框中选择 **Delay&raquo; MonoDelay** ,如图设置参数，以产生一个延迟20ms的没有Feedback的复制信号
 
 
-<img src="img/tutor2/37.jpg">
-<img src="img/tutor2/38.jpg">
-<img src="img/tutor2/39.jpg">
+![](static/img/tutor2/37.jpg)
+![](static/img/tutor2/38.jpg)
+![](static/img/tutor2/39.jpg)
 
 
 到轨道界面把这条FX轨道与失真节奏吉他的轨道放在一起，并重命名为 **RGt-Ghost** ,在失真节奏吉他的轨道的左侧的发送一览点击第一个发送选择 **RGt-Ghost** ,打开发送开关，并设置如图设置发送的音量（设置大约-6dB的发送量可以使得延迟轨道的信号大小正好是原轨的1/4）。最后把失真节奏吉他轨道的声像打至极右，RGt-Ghost的声像打至极左，就完成了Haas效果。
 
 
-<img class="col-sm-3" src="img/tutor2/40.jpg">
-<img src="img/tutor2/41.jpg">
-<img class="col-sm-3" src="img/tutor2/42.jpg">
-<img class="col-sm-2 img-self-zoom" src="img/tutor2/43.jpg">
+![](static/img/tutor2/40.jpg)
+![](static/img/tutor2/41.jpg)
+![](static/img/tutor2/42.jpg)
+![](static/img/tutor2/43.jpg)
 
 下面我们比较一下单声道把声像打到R60的失真节奏吉他和使用Haas效果的失真节奏吉他的音频
 -     单声道，声像R60
     <audio controls>
-      <source src="audio/RGtr1-R60.mp3" type="audio/mpeg">
+      <source src="static/audio/RGtr1-R60.mp3" type="audio/mpeg">
       您的浏览器不支持 audio 元素。
     </audio>
 -     Haas效果
     <audio controls>
-      <source src="audio/RGtr1-Haas.mp3" type="audio/mpeg">
+      <source src="static/audio/RGtr1-Haas.mp3" type="audio/mpeg">
       您的浏览器不支持 audio 元素。
     </audio>
 
@@ -37,26 +37,26 @@
 首先还是要创建一个FX轨道并且把效果选为 **Reverb&raquo; MannyM Reverb Stereo** ,在弹出的效果界面中如下设置参数，这将让我们得到一个虚拟的大空间的Space混响。而这条轨道所发出的声音只有纯粹的混响声，没有哪怕是一点点干声，这正是我们需要的
 
 
-<img class="col-sm-3 img-self-zoom" src="img/tutor2/44.jpg">
-<img class="col-sm-7 img-self-zoom" src="img/tutor2/45.jpg">
+![](static/img/tutor2/44.jpg)
+![](static/img/tutor2/45.jpg)
 
 
 接下来 **F3** 调出调音台，点击最左侧中部向上的小箭头，在上方的界面中点击左侧的界面红框所示处，然后在右侧对每个轨道的发送量如图进行设置（这里的图片中隐藏了一些轨道，请根据轨道名称对应进行设置）
-<img class="img-tutor2 img-self-zoom" src="img/tutor2/46.jpg">
+![](static/img/tutor2/46.jpg)
 上述发送的量越大，给对应轨道所加的混响也越多。一般来说，贝司是不需要加混响的。获得一个自然的混响声的办法是给音量小的轨道加较多的混响，这比较符合人们对空间的认识，但这并非一条铁律，很多时候我们并不需要去追求一个自然而真实的混音。
 完成上述的操作以后,让我们来听一下当前的混音是什么面貌的
 -     添加了Haas效果和主混响以后的混音
       <audio controls>
-        <source src="audio/reverbMix.mp3" type="audio/mpeg">
+        <source src="static/audio/reverbMix.mp3" type="audio/mpeg">
         您的浏览器不支持 audio 元素。
       </audio>
 
 ## 阴阳的艺术——均衡器
 均衡器毫无疑问是混音中最重要的效果器之一，另一个是压缩器。通过合理地调整均衡，我们可以让不同的乐器和谐共存，各自表现自己最有特点的频段，弱化自己空虚无力的部分。但是均衡器的调整也是混音中最难的部分，老辣的混音师无须花哨的效果，只用几个均衡设置就能令音乐的效果大大提升。从原理层面开始学习均衡，要先认识滤波器等，在这里我们不就此过多展开，可以参考《混音指南》《灵活的混音》中对均衡器的解释，通过大量的时间联系，提升自己的耳朵对频段的敏感度，学习均衡。
 本例中我们将采用一款强大好用的均衡器进行全部的均衡调整，你可以通过 **EQ &raquo;H-EQ** 找到这款均衡器，针对不同的音轨，我们要分别使用Mono或Stereo的插件：本例中，鼓组的所有轨道都是Stereo的，而录音的音频轨道，都是Mono的。
-<img src="img/tutor2/47.jpg">
+![](static/img/tutor2/47.jpg)
 下面我们对底鼓Kick，军鼓Snare，吊镲轨道Oh+room，失真吉他轨道，清音吉他轨道，主音吉他轨道，贝司分别添加H-EQ均衡器并进行调整。这些轨道的均衡设置如下图：
-<img src="img/tutor2/48.jpg">
+![](static/img/tutor2/48.jpg)
 下面我们逐一简单地解释上述均衡设置的逻辑所在，真正的实践中，均衡一定是通过每次大量的尝试才能取得理想的设置的：
 
 -  **底鼓** ：对一个底鼓而言，超低频的下潜，低频的敲击感和中高频的起振感是我们最关心的三个部分。SL-Avatar音源中的底鼓具有足够明亮的起振感，通过对110Hz的少量提升，我们适度为整个音乐的低频增加活力
@@ -70,7 +70,7 @@
 之所以称均衡为阴阳的艺术在于均衡的调整是以音轨间相互适当地避让冲突频段实现的。说阴阳的艺术是想告诉读者，表现一个音轨的频段并不一定通过提升这个音轨在该频段的能量实现，这往往会使得整个混音的均衡被打破，更合理地，可以尝试衰减与他在该频段产生冲突的音轨的对应频段。一阳一阴，均衡的调整是灵活多变的。下面是经过均衡调整之后的混音，可以对比上一条音频，听听两者的区别：
 -     均衡调整后的混音
     <audio controls>
-      <source src="audio/EQMix.mp3" type="audio/mpeg">
+      <source src="static/audio/EQMix.mp3" type="audio/mpeg">
       您的浏览器不支持 audio 元素。
     </audio>
 
@@ -78,43 +78,43 @@
 这一小节我们讨论混音中的另一个重要效果器：压缩。但是和一般的教程思路不同，我们把它失真一起进行讨论。这两种效果器的工作原理其实非常类似，都是把过响的声音变轻。但是压缩的处理较为柔和，造成较少的谐波失真，而失真的处理更微观，产生更多的谐波失真。事实上当你将某些压缩器调整在特定的设置下的时候，他就是一台失真效果器：例如将数字压缩C1 Comp的Attack和Release都开到最小，把他的ratio开得很大，Threshold开得很低的时候；例如把CLA76压缩的红色按键点灭的时候。
 这里我们讨论压缩和失真更多地是把他们作为一种让声音变得更紧实的工具，而不是众所周知的一种稳定器。“紧实”一个非常玄乎，不知道如何用动态、频谱等技术语言来表述的词，在听一个音轨的时候确是能切实感受到的。下面我们使用压缩和失真演示怎样让鼓组和贝司的声音变得更紧实，更容易在混音中被听见
 给鼓组的分组轨道 **Kit** 插入 **Compressor&raquo; CLA-76 Stereo** ,这是模拟Telectron的经典硬件压缩机1176的插件，把它按照下图进行设置
-<img src="img/tutor2/49.jpg">
+![](static/img/tutor2/49.jpg)
 和之前使用过的C1 Comp不同的是，这台机器没有Threshold这个参数，事实上他是一台恒定门限压缩机，把input开得越大，压缩的门限也就越深，不过自然这样输出的音量也会很大，这是就需要把output开小一点。接触过吉他音箱或失真单块的读者可以类比gain和level旋钮的关系来理解input和output旋钮的关系。另外要注意的是，这台机器的attack和release是反过来的，顺时针是扭小，逆时针扭大。这里对于整套鼓组的声音，我们用较低的门限、较小的压缩比、中等的attack和release来使得压缩效果自然一些。通过压缩，鼓组的整体感会更好，听起来会更近，更紧凑。
 -     压缩前的鼓组
       <audio controls>
-        <source src="audio/Kit-NoComp.mp3" type="audio/mpeg">
+        <source src="static/audio/Kit-NoComp.mp3" type="audio/mpeg">
         您的浏览器不支持 audio 元素。
       </audio>
 
 -     压缩后的鼓组
       <audio controls>
-        <source src="audio/Kit-Comp.mp3" type="audio/mpeg">
+        <source src="static/audio/Kit-Comp.mp3" type="audio/mpeg">
         您的浏览器不支持 audio 元素。
       </audio>
 
 接下来，给贝司的轨道先插入 **Distortion&raquo; NLS Buss Mono** ，这是一台基于neve话放等经典放大器的能产生少量谐波失真的失真单元。然后插入 **CLA-76 Mono** 压缩，并把它们如下设置
-<img class="col-sm-12" src="img/tutor2/51.jpg">
+![](static/img/tutor2/51.jpg)
 本例中我们把NLS的失真度开得很大，让他产生紧实的贝司音色。再通过压缩使贝司的信号更稳定
 -     处理前的贝司
     <audio controls>
-      <source src="audio/Bass-NoDist.mp3" type="audio/mpeg">
+      <source src="static/audio/Bass-NoDist.mp3" type="audio/mpeg">
       您的浏览器不支持 audio 元素。
     </audio>
 
 -      处理后的贝司
     <audio controls>
-      <source src="audio/Bass-Dist.mp3" type="audio/mpeg">
+      <source src="static/audio/Bass-Dist.mp3" type="audio/mpeg">
       您的浏览器不支持 audio 元素。
     </audio>
 
 你可能会觉得这似乎只是让贝司的音量变大了，那你可以尝试把处理后的轨道的音量关小一点听，就会发现，即使关小很多，听起来还是会比未处理的大声。这便是nevo失真赋予它的特点，令他听起来“很大”。而1176压缩除了稳定信号，一方面也通过连续的动态调整让贝司听起来有一定的“粘稠”的质感。
 接下来我们还简单地对清音节奏吉他做了压缩，令其动态变小，声音更稳定。使用的是 **CLA-3A** 压缩器，这款压缩器中，gain是音量，而peak reduction是压缩量。设置如下图
-<img src="img/tutor2/50.jpg">
+![](static/img/tutor2/50.jpg)
 完成本小节的压缩处理后，混音如下。对比上一个混音阶段，听辨是不是更紧了。
 
 -     压缩与失真处理后的混音
     <audio controls>
-      <source src="audio/CompMix.mp3" type="audio/mpeg">
+      <source src="static/audio/CompMix.mp3" type="audio/mpeg">
       您的浏览器不支持 audio 元素。
     </audio>
 

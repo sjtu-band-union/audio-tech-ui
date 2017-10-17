@@ -6,7 +6,7 @@
 
     失真的节奏吉他在一般乐曲中起一个铺垫背景的作用，其音效根据编曲因地制宜，偏向朋克、blues、硬摇滚得歌曲失真吉他较为突出，应做得亮色而靠前；金属乐中，失真吉他的低频结实饱满，厚实而靠前（不同的金属乐要求不同，Thrash风格的金属乐的失真吉他应该有散烈的高频）；而偏向流行的编曲中，失真吉他应适当靠后，频谱均匀地铺满声场。本例中的编曲偏向流行，故在现阶段的处理中应将失真吉他表现得均匀不突出。
 如图，我们为对应音轨依次插入如下效果器：guitar&raquo; GTR Stomp2 Mono和guitar&raquo; GTR Amp Mono，并如图设置参数。
-<img class="col-sm-12" src="img/tutor2/30.jpg">
+![](static/img/tutor2/30.jpg)
 
 图中的效果器从左到右依次为该音轨添加了:
 
@@ -19,19 +19,19 @@
 下面我们可以对比一下该轨道处理前和处理后的声音：
 - 处理前：
 <audio controls>
-  <source src="audio/RGtr1-raw.mp3" type="audio/mpeg">
+  <source src="static/audio/RGtr1-raw.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 处理后：
 <audio controls>
-  <source src="audio/RGtr1-easyFX.mp3" type="audio/mpeg">
+  <source src="static/audio/RGtr1-easyFX.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 
 ### **2,清音节奏电吉他**
 清音电吉他，如果在乐曲中扫弦作为主要的节奏吉他声部时，需要处理得稳定而平衡；而作为琶音，点缀在乐曲中时（如本例）需要一定的亮度来冲破其他声部（如失真吉他）的稳定的音量，来被听众听见。清音吉他常可以加入合唱（chorus）效果来产生更宽的空间感
 如图，我们对对应音轨同样插入GTR Stomp2 Mono和GTR Amp mono这两组效果插件，并如下图设置参数
-<img class="col-sm-12" src="img/tutor2/35.jpg">
+![](static/img/tutor2/35.jpg)
 
 图中的效果器从左到右依次为该音轨添加了:
 
@@ -44,12 +44,12 @@
 下面我们可以对比一下该轨道处理前和处理后的声音：
 - 处理前：
 <audio controls>
-  <source src="audio/RGtr2-raw.mp3" type="audio/mpeg">
+  <source src="static/audio/RGtr2-raw.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 处理后：
 <audio controls>
-  <source src="audio/RGtr2-easyFX.mp3" type="audio/mpeg">
+  <source src="static/audio/RGtr2-easyFX.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 图中从左到又依次添加了如下效果
@@ -57,7 +57,7 @@
 ### **3,主音电吉他**
 主音电吉他，一般是乐曲中独奏片段的主角，是听众注意力的焦点。有时也作为人声的副旋律声部存在。主音吉他要求具有明显的声音表现力和细节，音量始终凌驾于伴奏声部之上。可以加给主音吉他的效果非常之多，除了基本的失真之外，还有合唱chorus、相位phase、镶边flanger等调制效果；延迟delay、混响reverb等空间效果；哇音等均衡效果可以应用以增强其个性和表现力。本例中我们不过多采用花哨的效果对主音吉他进行修饰，而是选择较为简单地方式进行处理
 如图，我们对对应音轨同样插入GTR Stomp2 Mono和GTR Amp mono这两组效果插件，并如下图设置参数
-<img class="col-sm-12" src="img/tutor2/36.jpg">
+![](static/img/tutor2/36.jpg)
 
 图中的效果器从左到右依次为该音轨添加了:
 
@@ -70,19 +70,19 @@
 下面我们可以对比一下该轨道处理前和处理后的声音：
 - 处理前：
 <audio controls>
-  <source src="audio/solo-raw.mp3" type="audio/mpeg">
+  <source src="static/audio/solo-raw.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 处理后：
 <audio controls>
-  <source src="audio/solo-easyFX.mp3" type="audio/mpeg">
+  <source src="static/audio/solo-easyFX.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 
 ### **4,电贝司**
 贝司是编曲中的低音声部，它往往是音乐制作中最大的难点之一，不同的歌曲对贝司需要的音色要求是不同的。一些歌曲的贝司旋律性较弱，则其主要职能是与底鼓同步配合，为底鼓的振动增添一个音调。这样的混音要追求底鼓和贝司的贴合度，让他们听起来几乎是一个乐器；一些歌曲的贝司与底鼓有着对答的关系，很少同时演奏，这样的混音要求底鼓和贝司存在一定的反差，往往是底鼓低沉，贝司明亮突出；一些歌曲中贝司有着明显的旋律律动，这种情况不用太在意底鼓和贝司的贴合度（这并不是说两者就不相关了，作为低音声部的唯二乐器，他们永远不可能被分开讨论），而是更注意如何让贝司在低频中低频有良好的可闻旋律传递给观众。本例面对的是最后一种情况。
 贝司对演奏的稳定性要求极高，同时本例中的贝司录音在应该静音的时候可以听见少量的刮弦声和其他杂音，需要首先解决这些缺陷。我们调用 **Compressor &raquo; C1 comp-gate Mono** 这个数字压缩-噪声门来解决问题。如下图设置参数，红框标出的是需要调整的参数
-<img src="img/tutor2/31.jpg">
+![](static/img/tutor2/31.jpg)
 左侧红框框出的是压缩相关的参数，依次为：
 
     - Threshold压缩门限：控制压缩的深度，决定对超过 **多响** 的声音进行压缩（即按照一定规则减小）。对这轨贝司，我们根据其播放时的信号指示来适当地设定一个较浅（数值较大）的门限
@@ -96,7 +96,7 @@
 
 
 完成稳定声音（压缩器）和消除杂音（噪声门）的针对录音瑕疵的处理之后，我们接下来为贝司加上适度的箱体模拟，插入GTR Amp Mono效果器，并如下设置
-<img src="img/tutor2/32.jpg">
+![](static/img/tutor2/32.jpg)
 
 图中的为该音轨添加了如下效果：
 
@@ -107,21 +107,21 @@
 下面我们可以对比一下该轨道处理前和处理后的声音：
 - 处理前：
 <audio controls>
-  <source src="audio/Bass-raw.mp3" type="audio/mpeg">
+  <source src="static/audio/Bass-raw.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 处理后：
 <audio controls>
-  <source src="audio/Bass-easyFX.mp3" type="audio/mpeg">
+  <source src="static/audio/Bass-easyFX.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 
 ## 整体的音量和声像设置
 完成上述针对每个音轨单独的与处理之后，我们开始对音乐进行整体的音量和声响设置。按 **F3** 调出调音台界面。可以看到纵向的控制音量的推子和推子上方的横向的声像控制。对于本例而言，我们要突出主音吉他，平衡其他的音轨。故应该把节奏吉他的音量变小，并一个安排在左侧一个安排在右侧。贝司和主音吉他适当调整音量后放到正中央即可，鼓组的声像就按照音源给出的即可。
-<img class="col-sm-12" src="img/tutor2/33.jpg">
+![](static/img/tutor2/33.jpg)
 音量和声像的控制看似操作起来很简单，其实是对作品最早的音响效果的定位，需要对音乐的面貌有一个很准确的把握。如何让一个音轨成为主角的同时不因为过响而显得孤零零？如何让一个音轨在做配角时一方面不引人注意一方面又能清晰地被听见。如何让不同的乐器填满听众面前的声场，让音乐生动有趣，这都是在这个阶段应该谨慎决定和调整的。混音师对音乐的理解和审美以及对下一步如何处理的构想，在这一阶段充分体现。
 - 完成音量与声像平衡后
 <audio controls>
-  <source src="audio/easyEffects.mp3" type="audio/mpeg">
+  <source src="static/audio/easyEffects.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>

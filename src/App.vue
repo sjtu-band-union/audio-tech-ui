@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import url(./common/styles/markdown.scss);
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,12 +19,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-// mardown styling
-.markdown {
-  text-align: left;
-  h1 {
-    color: red;
-  }
 }
 </style>

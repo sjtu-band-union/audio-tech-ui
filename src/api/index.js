@@ -21,7 +21,7 @@ const api = {
     return GET(`markdown/${fileName}.md`, parseMD)
   },
   getJSON(fileName) {
-    return GET(`json/${fileName}.json`, parserJSON)
+    return GET(`json/${fileName}.json`, parseJSON)
   }
 }
 

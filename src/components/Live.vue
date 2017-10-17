@@ -1,16 +1,13 @@
 <template lang="html">
-  <div class="page-live">
-    <h1>Live</h1>
-    <router-link :to="{name: 'home'}">back to home page</router-link>
-  </div>
+  <tutor flag="live"></tutor>
 </template>
 
 <script>
+import tutor from '@/common/components/tutor'
 export default {
   name: 'live',
-
+	components: {
+		tutor,
+	}
 }
 </script>
-
-<style lang="scss">
-</style>

@@ -32,22 +32,22 @@
     在开始前先让我们来听一下各个阶段的音频是什么样的：
 - 准备好进行混音的工程的混缩:
 <audio controls>
-  <source src="audio/PutTogether.mp3" type="audio/mpeg">
+  <source src="static/audio/PutTogether.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 简单的音量平衡声场布置和加入电声效果器之后:
 <audio controls>
-  <source src="audio/EasyEffects.mp3" type="audio/mpeg">
+  <source src="static/audio/EasyEffects.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 完成混音的工作以后:
 <audio controls>
-  <source src="audio/mixready.mp3" type="audio/mpeg">
+  <source src="static/audio/mixready.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 经过最后母带处理的成品:
 <audio controls>
-  <source src="audio/mastered.mp3" type="audio/mpeg">
+  <source src="static/audio/mastered.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 可以听出，音乐在第二的音频中初露雏形，但是在第二个音频中尚存在很多听觉上的缺陷，如贝司不易被听清，乐器之间没有自然地融合在一起，声场干；而在第三个音频中这些问题都得到了较好的解决，音乐的表现力也得到了一定提升；在最后母带处理过的成品中，音乐的平衡已经和前者没有什么区别，主要是在音量和动态上以及一些整体的均衡上有了细微的调整，直观而言，音乐变得更大声了。
@@ -59,21 +59,21 @@
 对于具有虚拟轨道分配功能的鼓音源如Addictive Drummer，Superdrummer，我们可以在音源内给不同的鼓配件分配不同的虚拟输出，然后在音序器中启用这些输出，以便对他们进行混音。在本例中，我们分配以下独立的输出轨道：底鼓、军鼓、通鼓鼓组、落地鼓、踩镲、吊镲及房间一共6个立体声轨道。以Superior Drummer2为例，具体的操作如下：
 
 点击  **设备&raquo; vst乐器&raquo; 选择Toontrack-Superior Drummer**
-<img src="img/tutor2/25.jpg">
+![](static/img/tutor2/25.jpg)
 然后就会出现一条VST乐器轨道，把原先的乐器轨道上的MIDI曲谱按住ctrl（表示不移动时间）拖拽至新出现的轨道上。然后删除原先的乐器轨道，单击 **编辑乐器** 调出鼓音源的界面。然后如下图对每一个麦克风轨道进行输出分配：KD In, KD Out, KD Sub分配到Out 1/2; SD Top, SD bottom, SD 1176分配到Out 3/4; HH分配到Out 5/6; RT1, RT2, RT3分配到Out 7/8; FT1, FT2分配到Out 9/10; Oh, Amb Close分配到Out 11/12
-<img src="img/tutor2/26.jpg">
+![](static/img/tutor2/26.jpg)
 之后再调出VST乐器界面，点击e右边的小箭头，并在弹出的下拉菜单中勾选上前6个输出：
-<img src="img/tutor2/27.jpg">
+![](static/img/tutor2/27.jpg)
 此时回到工程轨道的界面，你会发现在多出了6条轨道，便是你刚才分好的六条轨道，
 之后我们需要创建一个分组轨道来作为所有鼓组音轨的输出轨道以便对鼓组做整体的处理。创建新的轨道选择分组轨道，默认立体声即可。将这条分组轨道命名为Kit
 
 
 
-<img src="img/tutor2/n3.jpg">
-<img src="img/tutor2/n4.jpg">
+![](static/img/tutor2/n3.jpg)
+![](static/img/tutor2/n4.jpg)
 
 
 之后对新的六条轨道的每一条，我们需要选中轨道后将其右边的输出选择为 **分组-Kit** ,完成后对六条轨道重命名，整理轨道的叠放位置可以得到如右图的工程视图：
 
-<img src="img/tutor2/29.jpg">
-<img src="img/tutor2/28.jpg">
+![](static/img/tutor2/29.jpg)
+![](static/img/tutor2/28.jpg)

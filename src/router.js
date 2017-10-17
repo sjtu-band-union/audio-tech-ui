@@ -19,9 +19,19 @@ export default new Router({
       path: '/tutor/post',
       name: 'post',
       component: Post
+    },    
+		{
+      path: '/tutor/post/:file',
+      name: 'post',
+      component: Post
     },
     {
       path: '/tutor/live',
+      name: 'live',
+      component: Live
+    },   
+		{
+      path: '/tutor/live/:file',
       name: 'live',
       component: Live
     },

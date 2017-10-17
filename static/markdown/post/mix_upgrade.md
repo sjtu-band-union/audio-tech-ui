@@ -4,21 +4,21 @@
 主音吉他在先在的混音下似乎显得有些单薄，如果想让他更具有变化和厚度，我们需要使用一些调制效果和延迟效果。
 调制效果是一个大类，泛指效果器自身能够以一定频率对一个参数进行调节的效果器。大部分调制效果是基于延迟效果的，调制的参数一般是延迟时间。当延迟的时间在1ms-10ms的区间里调制的时候，利用明显的对频谱的梳状滤波效应，产生镶边Flanger效果；当调制时间在10-35ms的时候，产生一些重复感，同时伴有时隐时现的梳状滤波效应，称之为合唱Chorus效果；对一个频段的声音产生相移，并对频率进行调制与原声混合，产生相位Phase效果；对均衡进行扭曲并在一定范围内调制频率产生自动哇音Auto-Wah效果。由于调制类效果器的特点，一般他们都由控制被调制参数变化速率的rate和变化幅度的depth来控制
 调制效果颇具特色，但要进行充分的尝试后才能找到真正合适的效果。对于本例中的主音吉他，我们采用 **Modulation&raquo; Enigma Mono/Stereo调制效果** 以及 **Delay&raquo; H-Delay延迟效果** 来进行润色，参数如下设置：点击红框中的load，调用黄框中的预设。对于延迟，调用完预设以后吧黄圈中的干湿比旋钮扭至图示。
-<img class="col-sm-12" src="img/tutor2/52.jpg">
+![](static/img/tutor2/52.jpg)
 处理前后的主音吉他音频如下：
 - 处理前
 <audio controls>
-  <source src="audio/Solo-NoMod.mp3" type="audio/mpeg">
+  <source src="static/audio/Solo-NoMod.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 调制处理后
 <audio controls>
-  <source src="audio/Solo-Mod.mp3" type="audio/mpeg">
+  <source src="static/audio/Solo-Mod.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 延迟处理后
 <audio controls>
-  <source src="audio/Solo-Delay.mp3" type="audio/mpeg">
+  <source src="static/audio/Solo-Delay.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 调制给主音带去了有趣的音效和深度，而延迟让空间感更丰富
@@ -28,12 +28,12 @@
 给军鼓所在的轨道插入 **Reverb&raquo; Trueverb Stereo** 混响，点击右上角的load，加载预设 **Snare Trap** 并如图将Direct的推子适当下拉一些以让声音更湿。处理前后的对比如下：
 - 处理前
 <audio controls>
-  <source src="audio/SN-NoVerb.mp3" type="audio/mpeg">
+  <source src="static/audio/SN-NoVerb.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 - 处理后
 <audio controls>
-  <source src="audio/SN-Reverb.mp3" type="audio/mpeg">
+  <source src="static/audio/SN-Reverb.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 
@@ -41,11 +41,11 @@
 母带处理并非是混音师的工作，但是在我们的DIY制作过程中，我们并没有办法找到专业的音频工程师来昂贵地完成这项最后的把关工作。只能装一回音频工程师，简单地进行母带处理
 母带处理是在混音完成以后对音频进行最后的均衡纠正，动态纠正，抖动处理等工作。可以弥补因为混音师的监听设备的局限而造成的整体的频谱不均衡和动态问题。在母带处理阶段，音乐的动态会被进一步不易察觉地压缩，从而音乐得以以更大的音量进行播放，我们主要要做的就是这一工作。
 调用 **Master&raquo; Maserati GRP stereo** ,并如下设置。先点到master模式，compress代表压缩的量，sensitivity代表输入的量。Output一般是0就可以。
-<img src="img/tutor2/34.jpg">
+![](static/img/tutor2/34.jpg)
 母带处理后的音频如下
 - 处理后
 <audio controls>
-  <source src="audio/mastered.mp3" type="audio/mpeg">
+  <source src="static/audio/mastered.mp3" type="audio/mpeg">
   您的浏览器不支持 audio 元素。
 </audio>
 

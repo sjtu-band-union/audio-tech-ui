@@ -1,34 +1,13 @@
 <template lang="html">
-  <div class="page-post">
-    <h1>Post</h1>
-    <router-link :to="{name: 'home'}">back to home page</router-link>
-    <div class="markdown" v-html="content">
-    </div>
-  </div>
+  <tutor flag="post"></tutor>
 </template>
 
 <script>
-import api from '@/api'
+import tutor from '@/common/components/tutor'
 export default {
   name: 'post',
-  data() {
-    return {
-      content: '',
-    }
-  },
-  created() {
-    api.getMarkdown('post_mix_mix')
-    .then(
-      data => {
-        this.content = data;
-      },
-      () => {
-        console.log('failed')
-      }
-    )
-  },
+	components: {
+		tutor,
+	}
 }
 </script>
-
-<style lang="scss">
-</style>
