@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueResource from 'vue-resource'
+import parseMD from 'marked'
 import parseJSON from './json-parser.js'
-import parseMD from './markdown-parser.js'
 
 Vue.use(VueResource)
 const GET = (url, preProcess) => ({

@@ -2,6 +2,8 @@
   <div class="page-post">
     <h1>Post</h1>
     <router-link :to="{name: 'home'}">back to home page</router-link>
+    <div class="markdown" v-html="content">
+    </div>
   </div>
 </template>
 
@@ -9,11 +11,16 @@
 import api from '@/api'
 export default {
   name: 'post',
+  data() {
+    return {
+      content: '',
+    }
+  },
   created() {
-    api.getMarkdown('test')
+    api.getMarkdown('111')
     .then(
       data => {
-        console.log(data)
+        this.content = data;
       },
       () => {
         console.log('failed')
