@@ -17,7 +17,7 @@ export default {
     }
   },
   created() {
-    api.getMarkdown('111')
+    api.getMarkdown('post_mix_mix')
     .then(
       data => {
         this.content = data;
