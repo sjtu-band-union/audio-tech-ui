@@ -6,9 +6,20 @@
 </template>
 
 <script>
+import api from '@/api'
 export default {
   name: 'post',
-
+  created() {
+    api.getMarkdown('test')
+    .then(
+      data => {
+        console.log(data)
+      },
+      () => {
+        console.log('failed')
+      }
+    )
+  },
 }
 </script>
 
