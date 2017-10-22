@@ -1,7 +1,22 @@
 [
-	"record",
-	"mix_prepare",
-	"mix_rough",
-	"mix_mix",
-	"mix_upgrade"
+	{
+		"file": "record",
+		"name": "概念&录音"
+	},
+	{
+		"file": "mix_prepare",
+		"name": "混音前的准备"
+	},
+	{
+		"file": "mix_rough",
+		"name": "粗混"
+	},
+	{
+		"file": "mix_mix",
+		"name": "融合声部"
+	},
+	{
+		"file": "mix_upgrade",
+		"name": "进阶"
+	}
 ]

@@ -1,6 +1,18 @@
 [
-	"system",
-	"pick",
-	"pa",
-	"console"
+	{
+		"file": "system",
+		"name": "系统"
+	},
+	{
+		"file": "pick",
+		"name": "拾音"
+	},
+	{
+		"file": "pa",
+		"name": "主扩"
+	},
+	{
+		"file": "console",
+		"name": "调台"
+	}
 ]
