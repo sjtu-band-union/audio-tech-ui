@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Post from '@/components/Post'
-import Live from '@/components/Live'
 import About from '@/components/About'
 import Resources from '@/components/Resources'
+import Tutor from '@/components/Tutor'
+import Doc from '@/components/Doc'
+
 
 Vue.use(Router)
 
@@ -16,24 +17,18 @@ export default new Router({
       component: Home
     },
     {
-      path: '/tutor/post',
-      name: 'post',
-      component: Post
-    },    
-		{
-      path: '/tutor/post/:file',
-      name: 'post',
-      component: Post
-    },
-    {
-      path: '/tutor/live',
-      name: 'live',
-      component: Live
-    },   
-		{
-      path: '/tutor/live/:file',
-      name: 'live',
-      component: Live
+      path: '/tutor/:tutorname',
+      name: 'tutor',
+      component: Tutor,
+      props: true,
+      children: [
+        {
+          path: ':filename',
+          name: 'doc',
+          component: Doc,
+          props: true,
+        }
+      ]
     },
     {
       path: '/band-union',
@@ -44,6 +39,11 @@ export default new Router({
       path: '/resources',
       name: 'resources',
       component: Resources
-    }
+    },
+    // redirect
+    {
+      path: '/tutor',
+      redirect: '/tutor/live'
+    },
   ]
 })

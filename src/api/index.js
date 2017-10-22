@@ -1,27 +1,18 @@
 import Vue from 'vue'
-import VueResource from 'vue-resource'
+import axios from 'axios'
 import parseMD from 'marked'
-import parseJSON from './json-parser.js'
 
-Vue.use(VueResource)
-const GET = (url, preProcess) => ({
-  then(success, fail) {
-    const root = 'static'
-    Vue.http.get(`${root}/${url}`)
-    .then(response => {
-      success(preProcess(response.bodyText))
-    }, response => {
-      fail(response)
-    })
-  }
-})
+Vue.prototype.$http = axios
+const root = 'static'
 
 const api = {
   getMarkdown(fileName) {
-    return GET(`markdown/${fileName}.md`, parseMD)
+    const path = `${root}/markdown/${fileName}.md`
+    return axios.get(path)
   },
   getJSON(fileName) {
-    return GET(`json/${fileName}.json`, parseJSON)
+    const path = `${root}/json/${fileName}.json`
+    return axios.get(path)
   }
 }
 
